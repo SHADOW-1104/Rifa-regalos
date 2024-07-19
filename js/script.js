@@ -1,15 +1,6 @@
 
 $(document).ready(function () {
 
-    const container = document.getElementById('container');
-    const video = document.getElementById('video');
-
-    video.oncanplaythrough = () => {
-        setTimeout(() => {
-            $(container).removeClass('hide');
-        }, 100);
-    };
-
     var winnerIndex = Math.floor(Math.random() * 50);
 
     $('article').each(function (index) {
